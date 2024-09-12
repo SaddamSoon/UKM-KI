@@ -1,0 +1,178 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+}
+
+/* Parallax effect */
+.parallax {
+    background-image: url('path-to-your-background-image.jpg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 128, 0, 0.8), rgba(0, 0, 0, 0.8));
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-section .logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-section .btn-primary {
+    background: #4caf50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hero-section .btn-primary:hover {
+    background: #388e3c;
+}
+
+.hero-section .btn-light {
+    background: #ffffff;
+    border: none;
+    color: #4caf50;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-left: 10px;
+}
+
+.hero-section .btn-light:hover {
+    background: #f4f4f4;
+}
+
+/* About Section */
+.about-section {
+    padding: 50px 20px;
+    background: white;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+.about-section p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Visi and Misi Sections */
+.visi-section, .misi-section {
+    padding: 50px 20px;
+    background: #ffffff;
+}
+
+.visi-section h2, .misi-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+.visi-section p, .misi-section p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.visi-section img, .misi-section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Animations */
+.visi-row, .misi-row {
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.visi-row.visible, .misi-row.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.misi-row {
+    transform: translateX(50%);
+}
+
+.misi-row.visible {
+    transform: translateX(0);
+}
+
+.misi-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.misi-section li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .about-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .visi-section h2, .misi-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .visi-section p, .misi-section p {
+        font-size: 0.9rem;
+    }
+}
